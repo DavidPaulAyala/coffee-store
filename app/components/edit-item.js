@@ -21,7 +21,14 @@ export default Ember.Component.extend({
       this.set('reviews', '');
       this.set('image', '');
       this.set('category', '');
+      this.toggleProperty('formIsShowing');
       this.sendAction('updateUnit', unit, params);
+
+    },
+    delete(unit) {
+      if (confirm('Do you want to permanantly delete this item?')) {
+      this.sendAction('destroyUnit', unit);
+      }
     }
   }
 });

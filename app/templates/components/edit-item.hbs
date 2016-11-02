@@ -14,6 +14,7 @@
     <label for="update-category">Category:</label>
     {{input value=category id="update-category" placeholder=unit.category}}
     <button {{action "updateUnit" unit}}>Update Item</button>
+    <button {{action "delete" unit}}>Delete Item</button>
   </form>
 
 {{else}}

@@ -4,6 +4,6 @@ export default Ember.Service.extend({
 
   unitArray: [],
   add(unit){
-    this.get('unitIds').push(unit);
+    this.get('unitArray').push(unit);
   }
 });

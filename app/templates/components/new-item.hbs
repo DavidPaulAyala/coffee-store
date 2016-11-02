@@ -1,0 +1,18 @@
+<div class="well">
+  <form>
+    <label for="item">Item Name:</label>
+    {{input value=item id="item"}}
+    <label for="description">Description:</label>
+    {{input value=description id="description"}}
+    <label for="price">Price:</label>
+    {{input value=price id="price"}}
+    <label for="reviews">Reviews:</label>
+    {{input value=reviews id="reviews"}}
+    <label for="image">Image URL:</label>
+    {{input value=image id="image"}}
+    <label for="category">Category:</label>
+    {{input value=category id="category"}}
+    <button {{action "addItem"}}>Add Item</button>
+  </form>
+
+</div>

@@ -1,0 +1,16 @@
+{ "units": [{
+  "item": "Columbian",
+  "description": "Full bodied medium roast.",
+  "price": 14.99,
+  "reviews": "Pretty good!",
+  "image":"http://www.seriouseats.com/images/2015/08/20150818-coffee-beans-shutterstock_71813833.jpg",
+  "category": "coffee"
+}, {
+  "item": "Aeropress",
+  "description": "A new kind of coffee press that brews coffee under ideal conditions:",
+  "price": 29.95,
+  "reviews": "Fast and easy to clean!",
+  "image": "https://images-na.ssl-images-amazon.com/images/I/71kcK6mMFVL._SX355_.jpg",
+  "category": "machine"
+  }]
+}

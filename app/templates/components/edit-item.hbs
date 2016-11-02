@@ -1,0 +1,21 @@
+<h4 {{action "showEditForm" on="click"}}>{{unit.item}}</h4>
+{{#if formIsShowing}}
+  <form>
+    <label for="update-item">Item Name:</label>
+    {{input value=item id="update-item" placeholder=unit.item}}
+    <label for="update-description">Description:</label>
+    {{input value=description id="update-description" placeholder=unit.description}}
+    <label for="update-price">Price:</label>
+    {{input value=price id="update-price"placeholder=unit.price}}
+    <label for="update-reviews">Reviews:</label>
+    {{input value=reviews id="update-reviews" placeholder=unit.reviews}}
+    <label for="update-image">Image URL:</label>
+    {{input value=image id="update-image" placeholder=unit.image}}
+    <label for="update-category">Category:</label>
+    {{input value=category id="update-category" placeholder=unit.category}}
+    <button {{action "updateUnit" unit}}>Update Item</button>
+  </form>
+
+{{else}}
+  <button {{action "showEditForm"}}>Edit Item</button>
+{{/if}}

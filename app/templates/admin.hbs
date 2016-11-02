@@ -1,1 +1,4 @@
 {{new-item addItem="addItem"}}
+{{#each model as |unit|}}
+  {{edit-item unit=unit updateUnit="updateUnit"}}
+{{/each}}

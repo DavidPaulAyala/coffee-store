@@ -32,8 +32,22 @@ label, input {
 
 .tile {
   text-align: center;
-  font-family: futura;
+}
 
+.container-fluid {
+  background-image: url(img/wood.jpg);
+  color: #EDAF77;
+}
+
+/*.active {
+  background-image: url(img/wood.jpg);
+  color: #EDAF77;
+}*/
+
+.jumbotron {
+  background-image: url(img/plank.jpg);
+  text-align: center;
+  text-decoration: underline;
 }
 
 body, html{
@@ -45,4 +59,42 @@ body, html{
   background-size: cover;
   font-family: futura;
   color: #EDAF77;
+}
+
+.navbar .navbuttons, .navbar .navbar-header {
+  background-color: #6D6258;
+}
+
+.navbar a {
+  color: #EDAF77;
+}
+
+.image-wrapper {
+  margin: 5px;
+  width: 100%;
+  height: 385px;
+  overflow: hidden;
+}
+
+.index-link {
+  width: 100%;
+  height: auto;
+}
+
+.list{
+  text-align: center;
+
+}
+
+.list a {
+  color: #EDAF77;
+}
+
+.list img {
+  width: 80%;
+  margin: auto;
+}
+
+#cart {
+  text-align: right;
 }

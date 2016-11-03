@@ -1,6 +1,11 @@
-<p>{{item.item}}</p>
-<p>{{item.description}}</p>
-<p>{{item.price}}</p>
-<p>{{item.reviews}}</p>
+<div class="tile">
+
 <img class="item-image" src={{item.image}}>
-<button {{action "addToCart" item}}>Add to Cart</button>
+
+<h2>{{item.item}}</h2>
+<h3>{{item.description}}</h3>
+<p>${{item.price}}</p>
+
+<button type="button" class="btn btn-success" {{action "addToCart" item}}>Add to Cart</button>
+
+</div>

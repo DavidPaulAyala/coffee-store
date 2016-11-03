@@ -1,7 +1,21 @@
+<div class="row">
+  <div class="col-md-8">
+    <h2>Cart Item(s)</h2>
+
+
 {{#each cart as |unit|}}
-  <p>{{unit.item}} - {{unit.price}}</p>
-  <img class="item-image" src={{unit.image}}>
+  <div class="cart-item">
+    <img class="cart-image" src={{unit.image}}>
+    <div class="cart-item-info">
+      <p>{{unit.item}} - ${{unit.price}}</p>
+    </div>
+  </div>
 {{/each}}
+</div>
+<div class="col-md-4">
+  <h2>Total:</h2>
+<p>Number of Items: {{itemCount}}</p>
+<p>Total Price: ${{totalPrice}}</p>
 {{free-shipping totalPrice}}
-<p>Items: {{itemCount}}</p>
-<p>Total: {{totalPrice}}</p>
+</div>
+</div>

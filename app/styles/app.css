@@ -3,6 +3,46 @@
   width: auto;
 }
 
+.cart-image {
+  max-height: 100px;
+  width: auto;
+  display: block;
+}
+
 label, input {
   display: block;
+}
+
+.cart-item {
+  padding: 5px;
+  margin: 5px 0;
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.cart-item-info {
+  font-size: 16px;
+  padding-left: 10px;
+  align-self: center;
+}
+
+.navbuttons {
+  float: right;
+}
+
+.tile {
+  text-align: center;
+  font-family: futura;
+
+}
+
+body, html{
+  height: 100%;
+  background-image: url(img/wood.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: futura;
+  color: #EDAF77;
 }
